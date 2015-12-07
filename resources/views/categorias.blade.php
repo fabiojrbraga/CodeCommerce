@@ -18,22 +18,7 @@
                 font-weight: 100;
             }
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-				
-                font-family: 'Lato';
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
+         
         </style>
     </head>
     <body>
@@ -42,10 +27,6 @@
 				<li>{{$category->nome}} - {{$category->descricao}}</li>
 			@endforeach
 			</ul>
-        <div class="container">
-            <div class="content">
-                <div class="title">Code Commerce</div>
-            </div>			
-        </div>
+        
     </body>
 </html>
