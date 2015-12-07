@@ -37,7 +37,11 @@
         </style>
     </head>
     <body>
-			
+			<ul>
+			@foreach($categories as $category)
+				<li>{{$category->nome}} - {{$category->descricao}}</li>
+			@endforeach
+			</ul>
         <div class="container">
             <div class="content">
                 <div class="title">Code Commerce</div>

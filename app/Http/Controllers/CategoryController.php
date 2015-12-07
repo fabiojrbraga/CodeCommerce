@@ -24,7 +24,7 @@ class CategoryController extends Controller
     public function index()
     {       
 	   $categories = $this->categories->all();
-	   return view('welcome', compact('categories'));
+	   return view('categorias', compact('categories'));
     }
 
     /**
