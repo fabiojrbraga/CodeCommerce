@@ -16,13 +16,14 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
             }
 
             .container {
                 text-align: center;
                 display: table-cell;
                 vertical-align: middle;
+				
+                font-family: 'Lato';
             }
 
             .content {
@@ -36,10 +37,15 @@
         </style>
     </head>
     <body>
+			<ul>
+			@foreach($categories as $category)
+				<li>{{$category->nome}} - {{$category->descricao}}</li>
+			@endforeach
+			</ul>
         <div class="container">
             <div class="content">
                 <div class="title">Code Commerce</div>
-            </div>
+            </div>			
         </div>
     </body>
 </html>
